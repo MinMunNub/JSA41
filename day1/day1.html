@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cat Wiki Search</title>
+  <link rel="stylesheet" href="day1.css" />
+</head>
+<body>
+  <div class="wiki-container">
+    <div class="character-card">
+      <div class="character-image">
+        <img id="catImage" src="https://via.placeholder.com/300x400" alt="Character Image" />
+      </div>
+      <div class="character-info">
+        <input type="text" id="searchInput" placeholder="Type cat breed name..." class="character-name-input" />
+        <button id="searchBtn">Search</button>
+
+        <ul class="character-stats">
+          <li><strong>Weight:</strong> <span id="weight"></span></li>
+          <li><strong>Height:</strong> <span id="height">N/A</span></li>
+          <li><strong>Breed:</strong> <span id="breed"></span></li>
+        </ul>
+
+        <div class="character-description">
+          <p id="description">Waiting for search...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="day1.js"></script>
+</body>
