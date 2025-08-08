@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sách đã lưu</title>
+</head>
+<body>
+    <h1>Dữ liệu trong localStorage:</h1>
+    <ul id="displayList"></ul>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const list = document.getElementById("displayList");
+            const savedData = JSON.parse(localStorage.getItem("listText")) || [];
+
+            savedData.forEach(item => {
+                const li = document.createElement("li");
+                li.textContent = item;
+                list.appendChild(li);
+            });
+        });
+    </script>
+</body>
+</html>
