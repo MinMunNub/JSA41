@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container_product {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product_item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            width: 300px;
+            text-align: center;
+        }
+        .product_item img {
+            width: 100%;
+            height: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Tìm kiếm sản phẩm:</h2>
+    <input type="text" id="searchInput" placeholder="Nhập tên sản phẩm...">
+
+    <h2>Lọc theo danh mục:</h2>
+    <select id="categoryFilter">
+        <option value="all">Tất cả</option>
+        <option value="Thời trang">Thời trang</option>
+        <option value="Giày dép">Giày dép</option>
+        <option value="Điện tử">Điện tử</option>
+        <option value="Phụ kiện">Phụ kiện</option>
+        <option value="Gia dụng">Gia dụng</option>
+    </select>
+
+    <div class="container_product"></div>
+
+
+    <div class="container_product">
+        <div class="product_item">
+            <img src="https://picsum.photos/300/200?random=1" alt="Áo Thun Nam Cotton">
+            <h3>Áo Thun Nam Cotton</h3>
+            <p>Giá: 199000 VNĐ</p>
+            <p>Thời trang</p>
+            <button>Thêm vào giỏ hàng</button>
+        </div>
+    </div>
+    <script src="day3.js"></script>
+</body>
+</html>

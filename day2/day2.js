@@ -62,7 +62,7 @@ convertButton.addEventListener("click", function () {
     textFromLocalStorage.push(upperText);
     localStorage.setItem("listText", JSON.stringify(textFromLocalStorage));
 
-    inputText.value = "";
+    inputText.value = "";   
 });
 
 // ["ASDASD", "DFVDFV", "ADASDASD"]
